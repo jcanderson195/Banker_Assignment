@@ -26,7 +26,9 @@ namespace Banker_Assignment
 
         public double payRaise()
         {
-            int currentWage = 10;
+            double currentWage;
+            Console.WriteLine("Enter a your current wage: ");
+            currentWage = Convert.ToInt32(Console.ReadLine());
             double newWage = currentWage + 2.50;
             Console.WriteLine("Your new wage is "+newWage+ " an hour.");
             return newWage;
